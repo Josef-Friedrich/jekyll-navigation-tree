@@ -4,10 +4,6 @@
 
 # based on https://gist.github.com/brandonmwest/3536551
 
-# Usage: {% navigation %}
-# or
-# {% navigation base/path %}
-
 module Jekyll
   # Add accessor for directory
   class Page
