@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -e
+
+cd test
+bundle exec jekyll build
+bundle exec htmlproofer ./_site/
