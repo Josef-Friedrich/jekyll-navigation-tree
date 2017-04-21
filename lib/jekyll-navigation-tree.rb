@@ -74,7 +74,7 @@ module Jekyll
         end
       end
 
-      puts "generating nav tree for #{@page_url}"
+      puts "Generating navigation tree for: #{@page_url}"
 
       # tree:
       # {"/tech"=>
