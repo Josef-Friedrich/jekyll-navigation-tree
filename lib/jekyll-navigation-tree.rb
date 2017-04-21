@@ -11,7 +11,7 @@
 module Jekyll
   # Add accessor for directory
   class Page
-  attr_reader :dir
+    attr_reader :dir
   end
 
   class NavTree < Liquid::Tag
