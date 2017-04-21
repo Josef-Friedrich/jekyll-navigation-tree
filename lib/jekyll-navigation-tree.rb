@@ -97,12 +97,12 @@ module Jekyll
         sub_tree = tree[base_path]
       end
 
-      files_first_traverse("", sub_tree)
+      files_first_traverse("  ", sub_tree)
     end
 
     def files_first_traverse(prefix, node = {})
       output = ""
-      output += "#{prefix}<ul>"
+      output += "\n#{prefix}<ul>\n"
       node_list = node.sort
 
       # node_list:
@@ -134,7 +134,7 @@ module Jekyll
             name = @dirs[name + "/"]["title"] || name
           end
 
-          output += "#{prefix}	 <li><a href=\"#{base}\">#{name}</a></li>" if subtree.empty?
+          output += "#{prefix}  <li><a href=\"#{base}\">#{name}</a></li>\n" if subtree.empty?
       end
 
       node_list.each do |base, subtree|
@@ -154,13 +154,13 @@ module Jekyll
             name_link = "<div class=\"subtree-name\">#{name}</div>"
           end
 
-          output += "#{prefix}	<li>#{name_link}"
-          output += files_first_traverse(prefix + '	 ', subtree)
-          output+= "</li>"
+          output += "#{prefix}  <li>#{name_link}"
+          output += files_first_traverse(prefix + '  ', subtree)
+          output += "#{prefix}  </li>\n"
 
         end
 
-        output += "#{prefix} </ul>"
+        output += "#{prefix}</ul>\n"
         output
       end
     end
