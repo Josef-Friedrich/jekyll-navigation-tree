@@ -170,4 +170,4 @@ module Jekyll
     end
 end
 
-Liquid::Template.register_tag("navigation", Jekyll::NavTree)
+Liquid::Template.register_tag("navigation_tree", Jekyll::NavTree)
