@@ -3,5 +3,6 @@
 set -e
 
 cd test
+bundle exec bundler install
 bundle exec jekyll build
 bundle exec htmlproofer ./_site/
