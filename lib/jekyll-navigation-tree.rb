@@ -1,6 +1,6 @@
 # For debugging purposes use: pp variable
-require("pp")
-require("awesome_print")
+#require("pp")
+#require("awesome_print")
 
 # based on https://gist.github.com/brandonmwest/3536551
 
@@ -31,7 +31,6 @@ module Jekyll
       tree = {}
 
       site.pages.each do |page|
-        ap page
         if ! page.data.has_key? "nav_tree" || page.data["nav_tree"] == true
           #  page: #<Jekyll:Page @name="Motorola-Moto-E-2nd-Gen-XT1524-4G-LTE.md">
           path = page.url
