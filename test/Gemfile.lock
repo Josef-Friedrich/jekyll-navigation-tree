@@ -1,3 +1,8 @@
+PATH
+  remote: ..
+  specs:
+    jekyll-navigation-tree (0.0.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -78,6 +83,7 @@ DEPENDENCIES
   html-proofer
   jekyll (= 3.4.3)
   jekyll-feed (~> 0.6)
+  jekyll-navigation-tree!
   minima (~> 2.0)
   tzinfo-data
 
