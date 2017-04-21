@@ -36,6 +36,8 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
+    jekyll-feed (0.9.2)
+      jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -67,6 +69,8 @@ GEM
       ethon (>= 0.8.0)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2017.2)
+      tzinfo (>= 1.0.0)
     yell (2.0.7)
 
 PLATFORMS
@@ -75,7 +79,9 @@ PLATFORMS
 DEPENDENCIES
   html-proofer
   jekyll
+  jekyll-feed
   minima
+  tzinfo-data
 
 BUNDLED WITH
    1.14.6
