@@ -10,7 +10,7 @@ module Jekyll
     attr_reader :dir
   end
 
-  class NavTree < Liquid::Tag
+  class NavigationTree < Liquid::Tag
 
     def initialize(tag_name, path, tokens)
       super
@@ -166,4 +166,4 @@ module Jekyll
     end
 end
 
-Liquid::Template.register_tag("navigation_tree", Jekyll::NavTree)
+Liquid::Template.register_tag("navigation_tree", Jekyll::NavigationTree)
