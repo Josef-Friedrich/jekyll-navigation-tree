@@ -12,8 +12,8 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
-  - jekyll-navigation-tree
+#gems:
+#  - jekyll-navigation-tree
 exclude:
   - Gemfile
   - Gemfile.lock

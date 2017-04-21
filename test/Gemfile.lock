@@ -36,7 +36,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-navigation-tree (0.0.2)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -76,7 +75,6 @@ PLATFORMS
 DEPENDENCIES
   html-proofer
   jekyll (= 3.4.3)
-  jekyll-navigation-tree
   minima (~> 2.0)
 
 RUBY VERSION

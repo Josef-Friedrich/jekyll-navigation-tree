@@ -2,7 +2,14 @@
 
 set -e
 
+if [ ! -d ./test/_plugins ]; then
+  mkdir ./test/_plugins
+fi
+cp ./lib/jekyll-navigation-tree.rb ./test/_plugins/
+
 cd test
-bundle update
 bundle exec jekyll build
 bundle exec htmlproofer ./_site/
+cd ..
+
+rm -rf ./test/_plugins
