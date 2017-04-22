@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-set -e
+#! /bin/sh
 
 if [ ! -d ./test/_plugins ]; then
   mkdir ./test/_plugins
@@ -9,7 +7,3 @@ cp ./lib/jekyll-navigation-tree.rb ./test/_plugins/
 
 cd test
 bundle exec jekyll build
-bundle exec htmlproofer ./_site/
-cd ..
-
-rm -rf ./test/_plugins
