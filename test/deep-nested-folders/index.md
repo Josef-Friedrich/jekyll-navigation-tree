@@ -2,4 +2,4 @@
 title: Deep nested folders
 ---
 
-test
+{% navigation_tree %}

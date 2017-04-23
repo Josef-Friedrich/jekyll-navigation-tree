@@ -2,4 +2,4 @@
 title: Level 1
 ---
 
-test
+{% navigation_tree %}
