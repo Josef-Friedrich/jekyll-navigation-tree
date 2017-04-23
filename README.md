@@ -14,9 +14,6 @@ A jekyll plugin for building hierarchial navigation trees from pages.
 {% navigation_tree base/path %}
 ```
 
-
-
-
 ## Links
 
 * [Source code on Github](https://github.com/Josef-Friedrich/jekyll-navigation-tree)
