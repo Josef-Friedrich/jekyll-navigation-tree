@@ -2,11 +2,18 @@ language: ruby
 rvm:
 - 2.3.3
 
-script: ./script/cibuild
+
+before_install:
+  - sudo add-apt-repository ppa:duggan/bats -y
+  - sudo apt-get -qq update
+  - sudo apt-get install -y bats
+  - sudo apt-get install -y libxml2-utils
+
+before_script: ./script/init.sh
+script: bats script
 
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
-sudo: false
-
+sudo: required

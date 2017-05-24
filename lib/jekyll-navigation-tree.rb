@@ -97,7 +97,9 @@ module Jekyll
         sub_tree = tree[base_path]
       end
 
-      files_first_traverse("  ", sub_tree)
+      if sub_tree != nil
+        files_first_traverse("  ", sub_tree)
+      end
     end
 
     def files_first_traverse(prefix, node = {})

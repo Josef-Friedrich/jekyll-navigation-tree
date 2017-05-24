@@ -1,7 +1,6 @@
 [![Build Status](https://travis-ci.org/Josef-Friedrich/jekyll-navigation-tree.svg?branch=master)](https://travis-ci.org/Josef-Friedrich/jekyll-navigation-tree)
 [![Rubygems downloads](https://img.shields.io/gem/dt/jekyll-navigation-tree.svg)](https://rubygems.org/gems/jekyll-navigation-tree)
 
-
 # jekyll-navigation-tree
 
 A jekyll plugin for building hierarchial navigation trees from pages.
@@ -15,9 +14,6 @@ A jekyll plugin for building hierarchial navigation trees from pages.
 ```liquid
 {% navigation_tree base/path %}
 ```
-
-
-
 
 ## Links
 
